@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-interface ToolCardProps {
+interface ToolcardProps {
   title: string;
   description: string;
   href: string;
@@ -10,7 +10,7 @@ interface ToolCardProps {
  * بطاقة أداة تعرض عنوانًا ووصفًا ورابطًا للصفحة المقابلة.
  * تستخدم عناصر Semantics وأوصاف aria لدعم الوصول.
  */
-export default function ToolCard({ title, description, href }: ToolCardProps) {
+export default function ToolCard({ title, description, href }: ToolcardProps) {
   return (
     <Link href={href}>
       <div
